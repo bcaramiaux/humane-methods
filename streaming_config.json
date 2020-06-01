@@ -1,0 +1,27 @@
+{
+    "version": 20190529,
+    "clients": [
+        {
+            "ip": "192.168.2.159",
+            "portout": 5009
+        },
+        {
+            "ip": "192.168.2.157",
+            "portout": 5009
+        }
+    ],
+    "model": {
+        "training": true,
+        "inference": false,
+        "pre_training" : ""
+    },
+    "schedule": [
+        {
+            "episodes": [1, 5000],
+            "n_iterations": 100,
+            "t_sleep": 1.0,
+            "environment": { "step_size": 0.02 }
+        }
+    ],
+    "log": false
+}

@@ -1,0 +1,37 @@
+{
+    "version": 20190611,
+    "network": {
+        "server": {
+            "ip": "127.0.0.1",
+            "port": 8888
+        },
+        "clients": [
+            {
+                "ip": "127.0.0.1",
+                "portout": 7777
+            }
+        ]
+    },
+    "need_sensors": false,
+    "environment": {
+        "dimension": 10,
+        "step_size": 0.01
+    },
+    "model": {
+        "training": true,
+        "inference": false,
+        "pre_trained_model" : ""
+    },
+    "schedule": [
+        {
+            "episodes": [1, 50],
+            "n_iterations": 200,
+            "t_sleep": 0.0,
+            "scrumble_thresh": 4,
+            "environment": { 
+                "step_size": 0.01 
+            }
+        }
+    ],
+    "log": false
+}
